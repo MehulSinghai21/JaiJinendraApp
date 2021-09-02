@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,9 +9,12 @@ namespace JaiJinendra
     {
         public App()
         {
+            String langName = "hi-IN";//"en-US";// "ar-AE";
+            CultureInfo ci = new CultureInfo(langName);
+            AppResources.Culture = ci;
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MasterPage() ;
         }
 
         protected override void OnStart()

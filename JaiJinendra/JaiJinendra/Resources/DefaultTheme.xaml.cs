@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace JaiJinendra
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace JaiJinendra.Resources
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DefaultTheme : ResourceDictionary
     {
-        public MainPage(string text)
+        public DefaultTheme()
         {
             InitializeComponent();
-            Label_Text.Text = text;
-
         }
     }
 }
