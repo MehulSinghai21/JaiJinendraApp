@@ -12,6 +12,7 @@ namespace JaiJinendra
             String langName = "hi-IN";//"en-US";// "ar-AE";
             CultureInfo ci = new CultureInfo(langName);
             AppResources.Culture = ci;
+            JaiJinendra.StringResources.ChalisaResources.Culture = ci;
             InitializeComponent();
 
             MainPage = new MasterPage() ;

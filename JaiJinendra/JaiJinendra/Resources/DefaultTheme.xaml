@@ -2,8 +2,8 @@
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JaiJinendra.Resources.DefaultTheme">
-
-      <Color x:Key="PrimaryColor">#F06543</Color>
+    <!--//ff6101    F06543-->
+      <Color x:Key="PrimaryColor">#ff6101</Color>
       <Color x:Key="PrimaryTextColor">#FFFFFF</Color>   
     <!--Dark Green-->
     <Color x:Key="PrimaryDarkColor">#313638</Color>

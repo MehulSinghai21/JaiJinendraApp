@@ -8,19 +8,19 @@
             <StackLayout Orientation="Vertical">
                         <ScrollView  VerticalOptions="Start">
                             <StackLayout Orientation="Vertical"  BackgroundColor="White">
-                                <StackLayout  Orientation="Vertical">
+                                <StackLayout  Orientation="Vertical" BackgroundColor="{DynamicResource PrimaryDarkColor}">
                                     <StackLayout  Orientation="Horizontal"  Margin="5,50,5,5"
-                                                  BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                                                  BackgroundColor="Transparent" HorizontalOptions="FillAndExpand">
                                         <Image Source="profile.png"  BackgroundColor="Transparent" HeightRequest="100"
                                                WidthRequest="100"  VerticalOptions="Center" />
 
                                         <StackLayout Orientation="Vertical">
-                                            <Label Text="Panda Profile" HorizontalTextAlignment="Start" FontSize="Large" 
-                               Margin="2,0,0,0"  HorizontalOptions="Start" VerticalOptions="EndAndExpand" TextColor="Black"/>
-                                            <Label Text="Xamarin Forms" HorizontalTextAlignment="Start" 
-                                                   FontSize="Small"  Margin="2,0,0,0" HorizontalOptions="Start"
+                                            <Label Text="जय जिनेन्द्र " TextColor="{DynamicResource PrimaryLightColor}" HorizontalTextAlignment="Start" FontSize="Large" 
+                               Margin="2,0,0,0"  HorizontalOptions="Start" VerticalOptions="EndAndExpand" />
+                                            <Label Text="अहिंसा परमो धर्म:" HorizontalTextAlignment="Start" 
+                                                   FontSize="Small"  Margin="2,0,0,0" TextColor="{DynamicResource SecondaryLightColor}" HorizontalOptions="Start"
                                VerticalOptions="StartAndExpand"
-                                                   TextColor="#16161d" />
+                                                   />
                                         </StackLayout>
                                     </StackLayout>
 
@@ -34,7 +34,7 @@
                                     </StackLayout>
                                 </StackLayout>
                                 
-                                <ListView x:Name="navigationList" Margin="0" SeparatorVisibility="Default" 
+                                <ListView x:Name="navigationList" Margin="0" BackgroundColor="{DynamicResource PrimaryLightColor}" SeparatorVisibility="Default" 
                                       VerticalOptions="Start" ItemTapped="Item_Tapped" >
 
                                         <ListView.ItemTemplate>

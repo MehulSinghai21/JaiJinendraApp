@@ -16,9 +16,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources\" />
+    <None Remove="Views\" />
+    <None Remove="ViewModel\" />
+    <None Remove="StringResources\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Views\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="StringResources\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="AppResources.resx">
@@ -29,6 +35,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.hi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="StringResources\ChalisaResources.hi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChalisaResources.hi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="StringResources\ChalisaResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChalisaResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="AppResources.Designer.cs">
@@ -36,6 +50,12 @@
     </Compile>
     <Compile Update="AppResources.hi.Designer.cs">
       <DependentUpon>AppResources.hi.resx</DependentUpon>
+    </Compile>
+    <Compile Update="StringResources\ChalisaResources.hi.Designer.cs">
+      <DependentUpon>ChalisaResources.hi.resx</DependentUpon>
+    </Compile>
+    <Compile Update="StringResources\ChalisaResources.Designer.cs">
+      <DependentUpon>ChalisaResources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

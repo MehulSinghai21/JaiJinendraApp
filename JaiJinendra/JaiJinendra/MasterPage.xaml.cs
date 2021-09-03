@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using JaiJinendra.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,11 +22,16 @@ namespace JaiJinendra
             menu.Add(new MenuItems { OptionName = "Settings" });
             menu.Add(new MenuItems { OptionName = "Logout" });
             navigationList.ItemsSource = menu;
-            Detail = new NavigationPage(new MainPage(AppResources.Language))
+            //Detail = new NavigationPage(new MainPage(JaiJinendra.StringResources.ChalisaResources.AdinathChalisa))
+            //{
+            //    BarBackgroundColor = (Color)App.Current.Resources["PrimaryColor"],
+            //    BarTextColor = Color.White
+            //};
+            Detail = new NavigationPage(new DashboardPageView())
             {
-                BarBackgroundColor = (Color)App.Current.Resources["PrimaryColor"],
+                BarBackgroundColor = (Color)App.Current.Resources["PrimaryDarkColor"],
                 BarTextColor = Color.White
-            }; ;
+            };
         }
 
         private void Item_Tapped(object sender, ItemTappedEventArgs e)

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="JaiJinendra.Views.CommonDetailTextPageView"
+    x:Name="CommonDetailPage" Title="{Binding PageTitle}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{DynamicResource SecondaryLightColor}">
+            <ScrollView  Padding="15,20,15,50">
+                <StackLayout BackgroundColor="Transparent">
+<Frame HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Margin="10" BorderColor="{DynamicResource PrimaryColor}">
+
+</Frame>
+                    <BoxView HeightRequest="30" IsVisible="false" HorizontalOptions="CenterAndExpand" WidthRequest="30" CornerRadius="10" BackgroundColor="{DynamicResource PrimaryColor}"  >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <Label FontSize="25" TextColor="{DynamicResource PrimaryColor}" Margin="10" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="{Binding PageTitle}"/>
+                <Label x:Name="Labe_Body" FontSize="20"  HorizontalOptions="Center" HorizontalTextAlignment="Center"  TextColor="{DynamicResource PrimaryDarkColor}" Text="{Binding ContentBody}"/>
+                </StackLayout>
+                
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

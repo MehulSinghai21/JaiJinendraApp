@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="JaiJinendra.Views.DashboardPageView">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image IsVisible="False" Source="Temple1.png"  HorizontalOptions="FillAndExpand" HeightRequest="200"/>
+<CollectionView x:Name="Collectionview_Dashboard" ItemsSource="{Binding Monkeys}"
+                ItemsLayout="VerticalGrid, 2" SelectionMode="Single"  SelectionChanged="Collectionview_Dashboard_SelectionChanged">
+    <CollectionView.ItemTemplate>
+        <DataTemplate>
+            <StackLayout  Padding="3">
+                <Grid Padding="10" BackgroundColor="{DynamicResource PrimaryLightColor}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label 
+                       Text="{Binding TitleHi}"
+                    TextColor="{DynamicResource PrimaryDarkColor}"
+                    VerticalOptions="End"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       LineBreakMode="TailTruncation" />
+            </Grid>
+            </StackLayout>
+            
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

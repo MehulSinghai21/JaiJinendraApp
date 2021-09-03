@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="CommonListPage"
+
+    x:Class="JaiJinendra.Views.CommonListPageView">
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView SelectionMode="Single" x:Name="CollectionView_CommonList" ItemsSource="{Binding IncomingList}" SelectionChanged="CollectionView_CommonList_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10,5,10,5">
+                            <Frame CornerRadius="15" BackgroundColor="{DynamicResource SecondaryLightColor}" Padding="5" BorderColor="LightGray">
+                            <Grid ColumnDefinitions="50,*" ColumnSpacing="10">
+                            <BoxView BackgroundColor="Gray" HeightRequest="50" WidthRequest="50" CornerRadius="25" Grid.Column="0"/>
+                            <StackLayout Grid.Column="1" Spacing="-3">
+                                <Label Text="{Binding TitleHi}" TextColor="{DynamicResource PrimaryDarkColor}" FontSize="18" FontAttributes="Bold" VerticalOptions="CenterAndExpand"/>
+                                 <Label Text="{Binding Body}" LineBreakMode="TailTruncation" TextColor="{DynamicResource PrimaryDarkColor}" FontSize="12" FontAttributes="Italic" VerticalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </Grid>
+                        </Frame>
+
+                        </StackLayout>
+
+                        
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
