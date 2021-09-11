@@ -106,5 +106,89 @@ namespace JaiJinendra.StringResources {
                 return ResourceManager.GetString("ShantinathChalisa", resourceCulture);
             }
         }
+        
+        internal static string ShreyansnathChalisa {
+            get {
+                return ResourceManager.GetString("ShreyansnathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string VasupujyaChalisa {
+            get {
+                return ResourceManager.GetString("VasupujyaChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string VimalnathChalisa {
+            get {
+                return ResourceManager.GetString("VimalnathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string Anantnath {
+            get {
+                return ResourceManager.GetString("Anantnath", resourceCulture);
+            }
+        }
+        
+        internal static string DharmanathaChalisa {
+            get {
+                return ResourceManager.GetString("DharmanathaChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string SheetalnathChalisa {
+            get {
+                return ResourceManager.GetString("SheetalnathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string KunthunathChalisa {
+            get {
+                return ResourceManager.GetString("KunthunathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string ArahnathChalisa {
+            get {
+                return ResourceManager.GetString("ArahnathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string MallinathChalisa {
+            get {
+                return ResourceManager.GetString("MallinathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string MunisuvrathChalisa {
+            get {
+                return ResourceManager.GetString("MunisuvrathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string NaminathChalisa {
+            get {
+                return ResourceManager.GetString("NaminathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string NeminathChalisa {
+            get {
+                return ResourceManager.GetString("NeminathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string ParshvnathChalisa {
+            get {
+                return ResourceManager.GetString("ParshvnathChalisa", resourceCulture);
+            }
+        }
+        
+        internal static string MahaviraChalisa {
+            get {
+                return ResourceManager.GetString("MahaviraChalisa", resourceCulture);
+            }
+        }
     }
 }

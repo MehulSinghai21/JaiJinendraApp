@@ -5,11 +5,11 @@
     x:Class="JaiJinendra.Views.CommonDetailTextPageView"
     x:Name="CommonDetailPage" Title="{Binding PageTitle}">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="{DynamicResource SecondaryLightColor}">
+        <StackLayout BackgroundColor="{DynamicResource PrimaryLightColor}">
             <ScrollView  Padding="15,20,15,50">
                 <StackLayout BackgroundColor="Transparent">
-<Frame HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Margin="10" BorderColor="{DynamicResource PrimaryColor}">
-
+<Frame HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" BackgroundColor="Transparent" Margin="10" >
+    <Image Source="{Binding PageImageSrc}" />
 </Frame>
                     <BoxView HeightRequest="30" IsVisible="false" HorizontalOptions="CenterAndExpand" WidthRequest="30" CornerRadius="10" BackgroundColor="{DynamicResource PrimaryColor}"  >
                         <BoxView.GestureRecognizers>

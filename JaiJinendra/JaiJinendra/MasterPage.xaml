@@ -8,7 +8,7 @@
             <StackLayout Orientation="Vertical">
                         <ScrollView  VerticalOptions="Start">
                             <StackLayout Orientation="Vertical"  BackgroundColor="White">
-                                <StackLayout  Orientation="Vertical" BackgroundColor="{DynamicResource PrimaryDarkColor}">
+                                <StackLayout  Orientation="Vertical" BackgroundColor="{DynamicResource PrimaryColor}">
                                     <StackLayout  Orientation="Horizontal"  Margin="5,50,5,5"
                                                   BackgroundColor="Transparent" HorizontalOptions="FillAndExpand">
                                         <Image Source="profile.png"  BackgroundColor="Transparent" HeightRequest="100"
@@ -24,7 +24,7 @@
                                         </StackLayout>
                                     </StackLayout>
 
-                                    <StackLayout BackgroundColor="Black" 
+                                    <StackLayout BackgroundColor="White" 
                                                  MinimumHeightRequest="1" Orientation="Vertical" 
                                                  HeightRequest="1"
                                          HorizontalOptions="FillAndExpand">
@@ -43,12 +43,12 @@
                                                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
                                                          VerticalOptions="Center">
 
-                                                        <Image Source="option_pointer.png"
+                                                        <Image Source="{Binding ImageSource}"
                                                             HorizontalOptions="Start"
                                                     VerticalOptions="Center" Margin="15,0,5,2" 
                                                                HeightRequest="25"
                                                                                WidthRequest="25"/>
-                                                        <Label Text="{Binding OptionName}" FontAttributes="Bold"
+                                                        <Label Text="{Binding TitleHi}" FontAttributes="Bold"
                                                                FontSize="Default" Margin="10,0,5,2"
                                                        HorizontalOptions="Start"  VerticalOptions="Center"
                                                                TextColor="#4a4848"/>

@@ -2,15 +2,27 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="JaiJinendra.Views.DashboardPageView">
+    x:Class="JaiJinendra.Views.DashboardPageView" BackgroundColor="{StaticResource PrimaryColor}" >
     <ContentPage.Content>
-        <StackLayout BackgroundColor="White">
-            <Image IsVisible="False" Source="Temple1.png"  HorizontalOptions="FillAndExpand" HeightRequest="200"/>
-<CollectionView x:Name="Collectionview_Dashboard" ItemsSource="{Binding Monkeys}"
+        <StackLayout BackgroundColor="Transparent">
+           <Grid RowDefinitions="150,*" >
+               <Grid Grid.Row="0">
+                   <Image Source="db_bhakti_white.png" Opacity=".3"/>
+                   <Frame Padding="10" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" BorderColor="White">
+                       <StackLayout Spacing="-2">
+                             <Label Text="जय जिनेन्द्र" TextColor="White" FontAttributes="Bold" FontSize="35" HorizontalOptions="Center" VerticalOptions="Center"/>
+                       <Label Text="अहिंसा परमो धर्म:" HorizontalOptions="Center"  TextColor="White" FontSize="22"/>
+                       </StackLayout>
+                     
+                   </Frame>
+                   
+               </Grid>
+               <Frame  Grid.Row="1" Padding="0,20,0,20" Margin="0,0,0,-15" BackgroundColor="{StaticResource PrimaryLightColor}"  CornerRadius="25">
+    <CollectionView x:Name="Collectionview_Dashboard" BackgroundColor="Transparent" Margin="0,3,0,0" ItemsSource="{Binding Monkeys}"
                 ItemsLayout="VerticalGrid, 2" SelectionMode="Single"  SelectionChanged="Collectionview_Dashboard_SelectionChanged">
     <CollectionView.ItemTemplate>
         <DataTemplate>
-            <StackLayout  Padding="3">
+            <StackLayout  Padding="1" BackgroundColor="Orange">
                 <Grid Padding="10" BackgroundColor="{DynamicResource PrimaryLightColor}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="150" />
@@ -18,7 +30,9 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Label 
+                    <StackLayout >
+                        <Image HeightRequest="100" WidthRequest="70" Source="{Binding ImageSource}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label 
                        Text="{Binding TitleHi}"
                     TextColor="{DynamicResource PrimaryDarkColor}"
                     VerticalOptions="End"
@@ -26,12 +40,19 @@
                     HorizontalOptions="Center"
                        FontAttributes="Bold"
                        LineBreakMode="TailTruncation" />
+                    </StackLayout>
+                    
             </Grid>
             </StackLayout>
             
         </DataTemplate>
     </CollectionView.ItemTemplate>
 </CollectionView>
+
+</Frame>
+           </Grid>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -52,5 +52,209 @@ namespace JaiJinendra {
                 return ResourceManager.GetString("Language", resourceCulture);
             }
         }
+        
+        internal static string aarti_shripanchparmeshthi {
+            get {
+                return ResourceManager.GetString("aarti_shripanchparmeshthi", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_mahavir {
+            get {
+                return ResourceManager.GetString("aarti_mahavir", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_parasnath {
+            get {
+                return ResourceManager.GetString("aarti_parasnath", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_vardhman_swami {
+            get {
+                return ResourceManager.GetString("aarti_vardhman_swami", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_vidyasagar_maharaji {
+            get {
+                return ResourceManager.GetString("aarti_vidyasagar_maharaji", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_neminath_bhagwan {
+            get {
+                return ResourceManager.GetString("aarti_neminath_bhagwan", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_munisuvratnath {
+            get {
+                return ResourceManager.GetString("aarti_munisuvratnath", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_chandraprabhu {
+            get {
+                return ResourceManager.GetString("aarti_chandraprabhu", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_jinvanimata {
+            get {
+                return ResourceManager.GetString("aarti_jinvanimata", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_adinathswami {
+            get {
+                return ResourceManager.GetString("aarti_adinathswami", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_trikaalchaubisi {
+            get {
+                return ResourceManager.GetString("aarti_trikaalchaubisi", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_vasupujya {
+            get {
+                return ResourceManager.GetString("aarti_vasupujya", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_dharmanathbhagwan {
+            get {
+                return ResourceManager.GetString("aarti_dharmanathbhagwan", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_sanmati_prabhu {
+            get {
+                return ResourceManager.GetString("aarti_sanmati_prabhu", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_chandraprabhudeva {
+            get {
+                return ResourceManager.GetString("aarti_chandraprabhudeva", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_shantinath_bhagwan {
+            get {
+                return ResourceManager.GetString("aarti_shantinath_bhagwan", resourceCulture);
+            }
+        }
+        
+        internal static string aarti_sheetalnath_bhagwan {
+            get {
+                return ResourceManager.GetString("aarti_sheetalnath_bhagwan", resourceCulture);
+            }
+        }
+        
+        internal static string stotrahindi_bhaktamar {
+            get {
+                return ResourceManager.GetString("stotrahindi_bhaktamar", resourceCulture);
+            }
+        }
+        
+        internal static string stotrahindi_merebhawna {
+            get {
+                return ResourceManager.GetString("stotrahindi_merebhawna", resourceCulture);
+            }
+        }
+        
+        internal static string stotrahindi_barahbhavna {
+            get {
+                return ResourceManager.GetString("stotrahindi_barahbhavna", resourceCulture);
+            }
+        }
+        
+        internal static string stotrahindi_vairagyaBhavna {
+            get {
+                return ResourceManager.GetString("stotrahindi_vairagyaBhavna", resourceCulture);
+            }
+        }
+        
+        internal static string stotrahindi_AlochanaPath {
+            get {
+                return ResourceManager.GetString("stotrahindi_AlochanaPath", resourceCulture);
+            }
+        }
+        
+        internal static string stotrahindi_dukhharanvinti {
+            get {
+                return ResourceManager.GetString("stotrahindi_dukhharanvinti", resourceCulture);
+            }
+        }
+        
+        internal static string stotrahindi_SamayikPath {
+            get {
+                return ResourceManager.GetString("stotrahindi_SamayikPath", resourceCulture);
+            }
+        }
+        
+        internal static string stotra_bhaktamar {
+            get {
+                return ResourceManager.GetString("stotra_bhaktamar", resourceCulture);
+            }
+        }
+        
+        internal static string stotra_parasnath {
+            get {
+                return ResourceManager.GetString("stotra_parasnath", resourceCulture);
+            }
+        }
+        
+        internal static string stotra_mahavirastak {
+            get {
+                return ResourceManager.GetString("stotra_mahavirastak", resourceCulture);
+            }
+        }
+        
+        internal static string stotra_kalyan_mandir {
+            get {
+                return ResourceManager.GetString("stotra_kalyan_mandir", resourceCulture);
+            }
+        }
+        
+        internal static string stotra_ekibhav {
+            get {
+                return ResourceManager.GetString("stotra_ekibhav", resourceCulture);
+            }
+        }
+        
+        internal static string stotra_darshan_path {
+            get {
+                return ResourceManager.GetString("stotra_darshan_path", resourceCulture);
+            }
+        }
+        
+        internal static string bhakti_acharyabhakti {
+            get {
+                return ResourceManager.GetString("bhakti_acharyabhakti", resourceCulture);
+            }
+        }
+        
+        internal static string bhakti_acharyavandana {
+            get {
+                return ResourceManager.GetString("bhakti_acharyavandana", resourceCulture);
+            }
+        }
+        
+        internal static string bhakti_acharyabhaktisanskrit {
+            get {
+                return ResourceManager.GetString("bhakti_acharyabhaktisanskrit", resourceCulture);
+            }
+        }
+        
+        internal static string bhakti_bhawnaDwatrishantika {
+            get {
+                return ResourceManager.GetString("bhakti_bhawnaDwatrishantika", resourceCulture);
+            }
+        }
     }
 }

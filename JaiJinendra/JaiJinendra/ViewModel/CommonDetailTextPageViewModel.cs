@@ -34,6 +34,21 @@ namespace JaiJinendra.ViewModel
 
             }
         }
+        private string _PageImageSrc = String.Empty;
+        public string PageImageSrc
+        {
+            get
+            {
+                return
+                _PageImageSrc;
+            }
+            set
+            {
+                _PageImageSrc = value;
+                OnPropertyChanged("PageImageSrc");
+
+            }
+        }
 
 
         public CommonDetailTextPageViewModel()

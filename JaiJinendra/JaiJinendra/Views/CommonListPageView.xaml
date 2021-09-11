@@ -6,17 +6,22 @@
 
     x:Class="JaiJinendra.Views.CommonListPageView">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="{DynamicResource PrimaryLightColor}">
             <CollectionView SelectionMode="Single" x:Name="CollectionView_CommonList" ItemsSource="{Binding IncomingList}" SelectionChanged="CollectionView_CommonList_SelectionChanged">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="10,5,10,5">
-                            <Frame CornerRadius="15" BackgroundColor="{DynamicResource SecondaryLightColor}" Padding="5" BorderColor="LightGray">
+                            <Frame CornerRadius="15" BackgroundColor="White" Padding="5" BorderColor="LightGray">
                             <Grid ColumnDefinitions="50,*" ColumnSpacing="10">
-                            <BoxView BackgroundColor="Gray" HeightRequest="50" WidthRequest="50" CornerRadius="25" Grid.Column="0"/>
+                                <StackLayout Grid.Column="0" HeightRequest="50" WidthRequest="50">
+                                    <Frame  BorderColor="Gray" HeightRequest="50" HorizontalOptions="CenterAndExpand" WidthRequest="50" CornerRadius="25"  Padding="0">
+                                        <Image Source="{Binding ImageSource}" HeightRequest="100" Aspect="Fill"/>
+                                    </Frame>
+                                </StackLayout>
+                            
                             <StackLayout Grid.Column="1" Spacing="-3">
-                                <Label Text="{Binding TitleHi}" TextColor="{DynamicResource PrimaryDarkColor}" FontSize="18" FontAttributes="Bold" VerticalOptions="CenterAndExpand"/>
-                                 <Label Text="{Binding Body}" LineBreakMode="TailTruncation" TextColor="{DynamicResource PrimaryDarkColor}" FontSize="12" FontAttributes="Italic" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding TitleHi}" TextColor="{DynamicResource PrimaryColor}" FontSize="18" FontAttributes="Bold" VerticalOptions="CenterAndExpand"/>
+                                 <!--<Label Text="{Binding Body}" LineBreakMode="TailTruncation" TextColor="{DynamicResource PrimaryDarkColor}" FontSize="12" FontAttributes="Italic" VerticalOptions="CenterAndExpand"/>-->
                             </StackLayout>
                         </Grid>
                         </Frame>

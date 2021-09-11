@@ -12,15 +12,17 @@ namespace JaiJinendra.Views
     {
         CancellationTokenSource cts;
         CommonDetailTextPageViewModel viewModel;
-        public CommonDetailTextPageView(string text,string title)
+        public CommonDetailTextPageView(string text,string title,string imgSrc)
         {
             
             InitializeComponent();
             this.BindingContext = viewModel = new CommonDetailTextPageViewModel();
             viewModel.ContentBody = text;
             viewModel.PageTitle = title;
-            
-            
+            viewModel.PageImageSrc = imgSrc;
+
+
+
         }
 
         async void TapGestureRecognizer_Tapped(System.Object sender, System.EventArgs e)

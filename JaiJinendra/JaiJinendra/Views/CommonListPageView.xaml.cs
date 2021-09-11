@@ -26,7 +26,7 @@ namespace JaiJinendra.Views
             CommonListModel selectedItem = e.CurrentSelection.FirstOrDefault() as CommonListModel;
             if(selectedItem!=null)
             {
-                Navigation.PushAsync(new CommonDetailTextPageView(selectedItem.Body,selectedItem.TitleHi));
+                Navigation.PushAsync(new CommonDetailTextPageView(selectedItem.Body,selectedItem.TitleHi,selectedItem.ImageSource));
                 if (sender is CollectionView lv) lv.SelectedItem = null;
             }
             
