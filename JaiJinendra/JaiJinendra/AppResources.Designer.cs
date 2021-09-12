@@ -256,5 +256,89 @@ namespace JaiJinendra {
                 return ResourceManager.GetString("bhakti_bhawnaDwatrishantika", resourceCulture);
             }
         }
+        
+        internal static string stuti_aradhanapath {
+            get {
+                return ResourceManager.GetString("stuti_aradhanapath", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_atamkirtan_ {
+            get {
+                return ResourceManager.GetString("stuti_atamkirtan ", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_alochanapath {
+            get {
+                return ResourceManager.GetString("stuti_alochanapath", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_amulyatatvavichar {
+            get {
+                return ResourceManager.GetString("stuti_amulyatatvavichar", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_bhaubalistuti {
+            get {
+                return ResourceManager.GetString("stuti_bhaubalistuti", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_bhaktamarmahima {
+            get {
+                return ResourceManager.GetString("stuti_bhaktamarmahima", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_chubisiteerthankarvandana {
+            get {
+                return ResourceManager.GetString("stuti_chubisiteerthankarvandana", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_darshanpath {
+            get {
+                return ResourceManager.GetString("stuti_darshanpath", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_darshanstuti {
+            get {
+                return ResourceManager.GetString("stuti_darshanstuti", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_prabhupatitpavan {
+            get {
+                return ResourceManager.GetString("stuti_prabhupatitpavan", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_samadhibhwana {
+            get {
+                return ResourceManager.GetString("stuti_samadhibhwana", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_samadhipath {
+            get {
+                return ResourceManager.GetString("stuti_samadhipath", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_shrishiddhchakra {
+            get {
+                return ResourceManager.GetString("stuti_shrishiddhchakra", resourceCulture);
+            }
+        }
+        
+        internal static string stuti_tumselagilagan {
+            get {
+                return ResourceManager.GetString("stuti_tumselagilagan", resourceCulture);
+            }
+        }
     }
 }

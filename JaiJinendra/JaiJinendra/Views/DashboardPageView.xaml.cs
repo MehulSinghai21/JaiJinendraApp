@@ -55,7 +55,13 @@ namespace JaiJinendra.Views
                 {
                     SetBhaktiHindi();
                 }
+                if (selectedItem.SrNo == "7")
+                {
+                    SetStuti();
+                }
                 
+
+
 
             }
 
@@ -157,6 +163,29 @@ namespace JaiJinendra.Views
 
 
             Navigation.PushAsync(new CommonListPageView(list, "भक्ति "));
+        }
+
+
+        void SetStuti()
+        {
+            list = new List<CommonListModel>();
+            list.Add(new CommonListModel { SrNo = "1", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: आलोचना पाठ  :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_alochanapath });
+            list.Add(new CommonListModel { SrNo = "2", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: अमूल्य तत्व विचार :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_amulyatatvavichar });
+            list.Add(new CommonListModel { SrNo = "3", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: आराधना पाठ :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_aradhanapath });
+            list.Add(new CommonListModel { SrNo = "4", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: आआत्म - कीर्तन  :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_atamkirtan_ });
+            list.Add(new CommonListModel { SrNo = "5", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: भक्तामर-महिमा :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_bhaktamarmahima });
+            list.Add(new CommonListModel { SrNo = "6", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: बाहुबली स्तुति :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_bhaubalistuti });
+            list.Add(new CommonListModel { SrNo = "7", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: चौबसी तीर्थंकर वंदना :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_chubisiteerthankarvandana });
+            list.Add(new CommonListModel { SrNo = "8", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: दर्शन पाठ :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_darshanpath });
+            list.Add(new CommonListModel { SrNo = "9", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: आदर्शन स्तुति :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_darshanstuti });
+            list.Add(new CommonListModel { SrNo = "10", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: प्रभु पतित पवन  :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_prabhupatitpavan });
+            list.Add(new CommonListModel { SrNo = "11", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: समाधि भावना  :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_samadhibhwana });
+            list.Add(new CommonListModel { SrNo = "12", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: समाधि भाव :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_samadhipath });
+            list.Add(new CommonListModel { SrNo = "13", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: श्री सिद्धचक्र स्तुति :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_shrishiddhchakra });
+            list.Add(new CommonListModel { SrNo = "14", ImageSource = "db_bhakti2_black.png", ColorCodeHex = "#ff6101", Title = "Chalisa", TitleHi = "-: तुमसे लगी लगन  :-", SubTitle = "", SubTitleHi = "", Body = AppResources.stuti_tumselagilagan });
+            
+
+            Navigation.PushAsync(new CommonListPageView(list, "स्तुति"));
         }
 
 
