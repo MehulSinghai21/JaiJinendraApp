@@ -5,12 +5,45 @@
     x:Class="JaiJinendra.Views.CommonDetailTextPageView"
     x:Name="CommonDetailPage" Title="{Binding PageTitle}">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="{DynamicResource PrimaryLightColor}">
+        <Grid>
+            <StackLayout BackgroundColor="{DynamicResource PrimaryLightColor}">
             <ScrollView  Padding="15,20,15,50">
                 <StackLayout BackgroundColor="Transparent">
 <Frame HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" BackgroundColor="Transparent" Margin="10" >
     <Image Source="{Binding PageImageSrc}" />
 </Frame>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Image HeightRequest="35" WidthRequest="35" Source="ic_play.png" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Play_Tapped"/>
+                            </Image.GestureRecognizers>
+                                    <Image.Triggers>
+        <DataTrigger TargetType="Image"
+                     Binding="{Binding AudioPlaying}"
+                     Value="True">
+            <Setter Property="IsVisible" Value="False" />
+
+
+            <!-- multiple Setters elements are allowed -->
+        </DataTrigger>
+    </Image.Triggers>
+                        </Image>
+                        <Image HeightRequest="35" IsVisible="false" WidthRequest="35" Source="ic_pause.png">
+                             <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Pause_Tapped"/>
+                            </Image.GestureRecognizers>
+                                           <Image.Triggers>
+        <DataTrigger TargetType="Image"
+                     Binding="{Binding AudioPlaying}"
+                     Value="True">
+            <Setter Property="IsVisible" Value="True" />
+
+
+            <!-- multiple Setters elements are allowed -->
+        </DataTrigger>
+    </Image.Triggers>
+                        </Image>
+                    </StackLayout>
                     <BoxView HeightRequest="30" IsVisible="false" HorizontalOptions="CenterAndExpand" WidthRequest="30" CornerRadius="10" BackgroundColor="{DynamicResource PrimaryColor}"  >
                         <BoxView.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -22,5 +55,18 @@
                 
             </ScrollView>
         </StackLayout>
+            <ContentView
+
+                BackgroundColor="Transparent"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="{Binding IsBusy}"
+                VerticalOptions="FillAndExpand">
+                <ActivityIndicator
+                    HorizontalOptions="Center"
+                    IsRunning="True"
+                    VerticalOptions="Center" />
+            </ContentView>
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>

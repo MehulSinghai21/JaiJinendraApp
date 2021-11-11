@@ -50,6 +50,7 @@
     <AndroidSigningStorePass>21101996</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>Jai Jinendra App Group</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>21101996</AndroidSigningKeyPass>
+<AndroidPackageFormat>aab</AndroidPackageFormat>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -63,6 +64,9 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Plugin.MediaManager">
+      <Version>1.0.9</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -154,6 +158,14 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\orange_strotra.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Ic_play.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Ic_pause.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

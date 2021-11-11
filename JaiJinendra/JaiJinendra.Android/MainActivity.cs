@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using MediaManager;
 
 namespace JaiJinendra.Droid
 {
@@ -16,6 +17,7 @@ namespace JaiJinendra.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            CrossMediaManager.Current.Init(this);
             LoadApplication(new App());
             
                Window.SetStatusBarColor(Android.Graphics.Color.Argb(241, 76, 0, 0));

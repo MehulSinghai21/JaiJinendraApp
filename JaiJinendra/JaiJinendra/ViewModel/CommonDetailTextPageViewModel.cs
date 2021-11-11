@@ -1,4 +1,7 @@
 ﻿using System;
+using MediaManager;
+using MediaManager.Library;
+
 namespace JaiJinendra.ViewModel
 {
     public class CommonDetailTextPageViewModel: BaseViewModel   
@@ -34,6 +37,24 @@ namespace JaiJinendra.ViewModel
 
             }
         }
+
+        private bool _isAudioPlaying = false;
+        public bool AudioPlaying
+        {
+            get
+            {
+                return
+                _isAudioPlaying;
+            }
+            set
+            {
+                _isAudioPlaying = value;
+                OnPropertyChanged("AudioPlaying");
+
+            }
+        }
+
+
         private string _PageImageSrc = String.Empty;
         public string PageImageSrc
         {
@@ -49,11 +70,43 @@ namespace JaiJinendra.ViewModel
 
             }
         }
+        private string _audioLink = String.Empty;
+        public string AudioLink
+        {
+            get
+            {
+                return
+                _audioLink;
+            }
+            set
+            {
+                _audioLink = value;
+                OnPropertyChanged("AudioLink");
 
+            }
+        }
+        IMediaItem mediaFile = null;
 
         public CommonDetailTextPageViewModel()
         {
         }
+
+        async void Button_Play_Clicked(System.Object sender, System.EventArgs e)
+        {
+            var mediaInfo = CrossMediaManager.Current;
+            await mediaInfo.Play("https://drive.google.com/uc?export=download&id=1ofeDNXEZz7MHDXj6ftKEBFduxqBOpG8e");
+            //var mediaInfo1 = CrossMediaManager.Current;
+            //if (mediaFile1 == null)
+            //{
+            //    await mediaInfo.Play(audioLink);
+            //}
+            //else
+            //{
+            //    await mediaInfo.Play();
+            //}
+        }
+
+
 
     }
 }
