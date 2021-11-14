@@ -24,6 +24,21 @@ namespace JaiJinendra.Views
             viewModel.PageTitle = title;
             viewModel.PageImageSrc = imgSrc;
             viewModel.AudioLink = _audioLink;
+            var current = Connectivity.NetworkAccess;
+
+            if (_audioLink==string.Empty)
+            {
+                Layout_AudioButton.IsVisible = false;
+            }
+            else
+            {
+                if (current == NetworkAccess.Internet)
+                {
+                    Layout_AudioButton.IsVisible = true;
+                }
+               
+            }
+            
 
 
 
@@ -49,6 +64,10 @@ namespace JaiJinendra.Views
 
         async void Play_Tapped(System.Object sender, System.EventArgs e)
         {
+            try
+            {
+
+            
             viewModel.AudioPlaying = false;
             viewModel.IsBusy = true;
             //viewModel.getPdfStream();
@@ -74,7 +93,12 @@ namespace JaiJinendra.Views
                      viewModel.AudioPlaying = false;
                      mediaFile = args.MediaItem;
                  };
-
+            }
+            catch
+            {
+                viewModel.IsBusy = false;
+                DisplayAlert("", "Can't play audio ", "Done");
+            }
 
 
         }

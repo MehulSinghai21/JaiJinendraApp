@@ -12,7 +12,7 @@
 <Frame HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" BackgroundColor="Transparent" Margin="10" >
     <Image Source="{Binding PageImageSrc}" />
 </Frame>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <StackLayout x:Name="Layout_AudioButton" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                         <Image HeightRequest="35" WidthRequest="35" Source="ic_play.png" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="Play_Tapped"/>

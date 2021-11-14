@@ -50,7 +50,7 @@
     <AndroidSigningStorePass>21101996</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>Jai Jinendra App Group</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>21101996</AndroidSigningKeyPass>
-<AndroidPackageFormat>aab</AndroidPackageFormat>
+<AndroidPackageFormat>apk</AndroidPackageFormat>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
