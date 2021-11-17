@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JaiJinendra.Resources.DefaultTheme">
     <!--//ff6101    F06543-->
-      <Color x:Key="PrimaryColor">#f14c00</Color>
+      <Color x:Key="PrimaryColor">#ff904d</Color>
       <Color x:Key="PrimaryTextColor">#FFFFFF</Color>   
     <!--Dark Green-->
     <Color x:Key="PrimaryDarkColor">#313638</Color>
