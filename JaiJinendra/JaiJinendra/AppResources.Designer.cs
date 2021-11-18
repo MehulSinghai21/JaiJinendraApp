@@ -340,5 +340,281 @@ namespace JaiJinendra {
                 return ResourceManager.GetString("stuti_tumselagilagan", resourceCulture);
             }
         }
+        
+        internal static string arghavali_devshastraguru {
+            get {
+                return ResourceManager.GetString("arghavali_devshastraguru", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_vidyamanabeesteethankar {
+            get {
+                return ResourceManager.GetString("arghavali_vidyamanabeesteethankar", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_kritrimaakritima {
+            get {
+                return ResourceManager.GetString("arghavali_kritrimaakritima", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_siddhparmaesti {
+            get {
+                return ResourceManager.GetString("arghavali_siddhparmaesti", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_teeschaubisi {
+            get {
+                return ResourceManager.GetString("arghavali_teeschaubisi", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_shriaadinathji {
+            get {
+                return ResourceManager.GetString("arghavali_shriaadinathji", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sriajitanathjinendra {
+            get {
+                return ResourceManager.GetString("arghavali_sriajitanathjinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srisambhavanathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srisambhavanathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sriabhinandananatha {
+            get {
+                return ResourceManager.GetString("arghavali_sriabhinandananatha", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srisumatinatha {
+            get {
+                return ResourceManager.GetString("arghavali_srisumatinatha", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sripadmaprabhajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_sripadmaprabhajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srisuparshvanatha {
+            get {
+                return ResourceManager.GetString("arghavali_srisuparshvanatha", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srichandraprahajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srichandraprahajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sripuspadantajnendra {
+            get {
+                return ResourceManager.GetString("arghavali_sripuspadantajnendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srisheetalnathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srisheetalnathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srisreyansanatha {
+            get {
+                return ResourceManager.GetString("arghavali_srisreyansanatha", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srivasupujyajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srivasupujyajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srivimalanatha {
+            get {
+                return ResourceManager.GetString("arghavali_srivimalanatha", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srinantanatha {
+            get {
+                return ResourceManager.GetString("arghavali_srinantanatha", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sridharmanathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_sridharmanathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srishantinathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srishantinathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srikunthunathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srikunthunathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sriarahnathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_sriarahnathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srimallinathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srimallinathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srimunisuvratajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srimunisuvratajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srinaminathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srinaminathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srineminathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_srineminathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sriparavanathajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_sriparavanathajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_shimahavirajinendra {
+            get {
+                return ResourceManager.GetString("arghavali_shimahavirajinendra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_bhaubaliswami {
+            get {
+                return ResourceManager.GetString("arghavali_bhaubaliswami", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_panchbalayati {
+            get {
+                return ResourceManager.GetString("arghavali_panchbalayati", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_solahakaranabhavana {
+            get {
+                return ResourceManager.GetString("arghavali_solahakaranabhavana", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_panchamerujinalayon {
+            get {
+                return ResourceManager.GetString("arghavali_panchamerujinalayon", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_nandisvaradvipajinalayon {
+            get {
+                return ResourceManager.GetString("arghavali_nandisvaradvipajinalayon", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_dasalaksanadharma {
+            get {
+                return ResourceManager.GetString("arghavali_dasalaksanadharma", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srisamyakratntraya {
+            get {
+                return ResourceManager.GetString("arghavali_srisamyakratntraya", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_saptarishi {
+            get {
+                return ResourceManager.GetString("arghavali_saptarishi", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srichaubisatirthankaranirvanaksetra {
+            get {
+                return ResourceManager.GetString("arghavali_srichaubisatirthankaranirvanaksetra", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_samedhshikarji {
+            get {
+                return ResourceManager.GetString("arghavali_samedhshikarji", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_sarasvatimata {
+            get {
+                return ResourceManager.GetString("arghavali_sarasvatimata", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_srimandala {
+            get {
+                return ResourceManager.GetString("arghavali_srimandala", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_bharteshwarswami {
+            get {
+                return ResourceManager.GetString("arghavali_bharteshwarswami", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_gautamswamiji {
+            get {
+                return ResourceManager.GetString("arghavali_gautamswamiji", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_jambuswamiji {
+            get {
+                return ResourceManager.GetString("arghavali_jambuswamiji", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_aantaranashai {
+            get {
+                return ResourceManager.GetString("arghavali_aantaranashai", resourceCulture);
+            }
+        }
+        
+        internal static string arghavali_maansthimbhji {
+            get {
+                return ResourceManager.GetString("arghavali_maansthimbhji", resourceCulture);
+            }
+        }
     }
 }

@@ -79,35 +79,52 @@ namespace JaiJinendra
         {
             try
             {
-                var item = e.Item as MenuItems;
+                
+                //var item = e.Item as MenuItems;
 
-                switch (item.OptionName)
-                {
-                    case "Browse Products":
-                        {
-                            //Detail = new NavigationPage(new BrowseProducts());
-                            IsPresented = false;
-                        }
-                        break;
-                    case "Categories":
-                        {
-                           // Detail = new NavigationPage(new Categories());
-                            IsPresented = false;
-                        }
-                        break;
-                    case "Profile":
-                        {
-                         //   Detail.Navigation.PushAsync(new Profile());
-                            IsPresented = false;
-                        }
-                        break;
-                }
+                //switch (item.OptionName)
+                //{
+                //    case "Browse Products":
+                //        {
+                //            //Detail = new NavigationPage(new BrowseProducts());
+                //            IsPresented = false;
+                //        }
+                //        break;
+                //    case "Categories":
+                //        {
+                //           // Detail = new NavigationPage(new Categories());
+                //            IsPresented = false;
+                //        }
+                //        break;
+                //    case "Profile":
+                //        {
+                //         //   Detail.Navigation.PushAsync(new Profile());
+                //            IsPresented = false;
+                //        }
+                //        break;
+                //}
+                IsPresented = false;
+                ((CollectionView)sender).SelectedItem = null;
             }
             catch (Exception ex)
             {
 
             }
         }
+
+        void SendFeedback_Tapped(System.Object sender, System.EventArgs e)
+        {
+            Detail.Navigation.PushAsync(new SendFeedbackPageView());
+            IsPresented = false;
+        }
+
+        void Sponsors_Tapped(System.Object sender, System.EventArgs e)
+        {
+            Detail.Navigation.PushAsync(new SponsorDetailPageView());
+            IsPresented = false;
+        }
+
+
     }
 
 

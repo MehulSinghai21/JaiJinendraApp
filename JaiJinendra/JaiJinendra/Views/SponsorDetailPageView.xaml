@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="JaiJinendra.Views.SponsorDetailPageView" BackgroundColor="White" Title="Sponsors">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="15" VerticalOptions="CenterAndExpand">
+            <Label FontAttributes="Bold" Margin="0,0,0,30" Text="We are currently looking for Sponsors" TextColor="{x:StaticResource PrimaryColor}" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="25"/>
+
+            <Label TextColor="{x:StaticResource SecondaryLightTextColor}" FontSize="18" HorizontalTextAlignment="Center" Text="You can also be a part of जय जिनेन्द्र  - अहिंसा परमो धर्म: Application family."/>
+            <Label TextColor="{x:StaticResource SecondaryLightTextColor}" FontSize="18" HorizontalTextAlignment="Center" Text="Please contact us to know more - "/>
+
+            <StackLayout >
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Email : "/>
+                            <Span  FontAttributes="Bold" TextColor="{x:StaticResource PrimaryColor}" Text="mehulsinghai21@gmail.com">
+                                 <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Email_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span  Text=" (Tap to Copy)"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Phone : "/>
+                            <Span FontAttributes="Bold" TextColor="{x:StaticResource PrimaryColor}" Text="+91 9754509177">
+                                 <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Phone_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span  Text=" (Tap to Copy)"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Whats App : "/>
+                            <Span TextColor="{x:StaticResource PrimaryColor}" FontAttributes="Bold" Text="+91 9754509177 ">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="WhatsApp_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+
+                             <Span  Text=" (Tap to Open)"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
